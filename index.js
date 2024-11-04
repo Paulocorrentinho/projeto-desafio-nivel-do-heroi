@@ -1,4 +1,5 @@
 const entradaDeDados = require('prompt-sync')()
+let resp = "s"
 do {
     let nome = entradaDeDados('Digite um nome de Herói: ')
     let xp = entradaDeDados('Digite um número correspondente ao nivel do Herói: ')
@@ -24,5 +25,5 @@ do {
 
     console.log('O Herói de nome ' + nome + ' está no nível de ' + nivel)
 
-    var resp = entradaDeDados('Deseja continuar?(s/n)')
-} while (resp === 's')
+    resp = entradaDeDados('Deseja continuar?(s/n)')
+} while (resp === "s")
